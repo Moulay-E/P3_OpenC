@@ -1,0 +1,822 @@
+/* bon à savoir 
+    quand il n'ya pas d'espace entre deux
+    instruction/classe css c'est qu'il ont un bloc en 
+    commun */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* style de la page */
+body {
+border-color: green;
+margin: 0;
+padding: 0; 
+display: flex;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1440px;
+    height: 1884px;
+    background-color: White;
+    font-size: 16px;
+}
+/* en tête */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 16%;
+}
+/* corespond au titre en haut a droite */
+.categorie {
+    width: 30%;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.couleurHover{
+    font-weight: 400;
+}
+.couleurHover:hover {
+    color:#0065FC;
+}
+.borderTop{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.borderTop:hover {
+    border-top: #0065FC 2px solid;
+}
+
+.imgHead {
+    display: flex;
+    justify-content: center;
+    width: 61px;
+}
+.imgHead img {
+    height: 19px;
+    width: 61px;
+    border-radius: 0px;
+    
+}
+/* corespond au h2 et p au dessu de la barre de recherche et celle ci */
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    margin-top: 2%
+}
+.enTete {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.enTete h2 {
+    height: 31%;
+    margin: 0;
+}
+nav p {
+    font-size: 16px;
+    margin: 0;
+    height: 63%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.nav__search {
+    flex-direction: row;
+    height: 49px;
+}
+.nav__search__bar {
+height: 49px;
+width: 229px;
+border: 1px solid #F2F2F2;
+}
+::placeholder{
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 50px;
+    background-color: #F2F2F2 ;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+nav .fa-solid {
+    color: black;
+}
+.fa-location-dot {
+    color: black;
+    font-size: 18px;
+}
+.btn__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 132px;
+    background-color: #0065FC;
+    color: white;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    overflow: hidden;
+}
+.btn__search__txt {
+    font-size: 18px;
+}
+.fa-search {
+    visibility: hidden;
+}
+/* coresspond au different "button" et exemple: familliale, eco */
+.filter {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.filter__block {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.filter__block__element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border: 2px grey solid;
+    border-radius: 25px;
+    
+}
+.filter__btn1{
+    width: 12.153vw;
+}
+.filter__btn2{
+    width: 9.444vw    ;
+}
+.filter__btn3{
+    width: 11.944vw;
+}
+.filter__btn4{
+    width: 15.694vw;
+}
+.filter__block__element:hover {
+    background-color: #DEEBFF;
+}
+.filter__block__element .fa-solid {
+    margin-right: 10px;
+}
+.filter h4 {
+    font-size: 18px;
+}
+.filter span {
+    font-size: 1.181vw;
+    font-weight: 600;
+}
+/* gestion icon & couleur */
+.blue {
+    color: #0065FC;
+}
+.grey {
+    color: #F2F2F2;
+}
+.fa-solid {
+    vertical-align: middle;
+    color: #0065FC;
+}
+.iconAlign {
+    display: flex;
+  align-items: center;
+}
+/* correspond au texte en dessous des filtre */
+.information {
+    text-align: left;
+    width: 100%;
+    height: 10%;
+}
+.fa-info-circle{
+    margin-right: 10px;
+    color: gray;
+}
+/* permet de donner un style au section en general */
+section {   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* correspond au contenaire de marseille et populaire et leur card */
+.hebergement {
+width: 100%;
+height: 34%;
+display: flex;
+justify-content: space-between;
+}
+.hebergement__marseille {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 61%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+} 
+.hebergement__marseille__h2 {
+    font-size: 22px;
+    display: flex;
+    height: 8%;
+    align-items: flex-end;
+    width: 95%;
+    justify-content: flex-start;
+    margin-left: 5%;
+}  
+.hebergement__marseille__h3 {
+    font-size: 18px;
+    height: 5%;
+    width: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 5%;
+}  
+.hebergement__marseille__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+    height: 75%;
+    margin: 0 5% 0 5%;
+}
+.card {
+    width: 30%;
+    height: 42%; 
+    display: flex;
+    flex-direction: column; 
+}
+.card, .card__popular {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.card__img{
+    height: 61%;
+    width: 99%;
+}
+.card__img2 {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+    object-fit: cover;
+}
+.card__txt{
+    height: 38%;
+    width: 100%;
+}
+.card__txt h3, .card__txt p{
+    margin: 5px;
+}
+.card-title {
+    font-size: 1.111vw;
+    font-weight: 700;
+}
+.card-subtitle {
+    font-size: 0.972vw;
+}
+.card-rating {
+    margin-left: 5px;
+    font-size: 0.833vw;
+}
+
+.popular {
+    width: 35%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.popular2{
+    width: 90%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+}
+.popularFlex {
+    width: 83%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 4%;
+}
+.popular__h2 {
+    font-size: 22px;
+    height: 30%;
+    margin: 0;
+}
+.fa-chart-line {
+    margin-left: 0;
+}
+.card__popular {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 24%;
+}
+.card__popular img {
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    object-fit: cover;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    object-fit: cover;
+}
+.card__txt__popular {
+    margin-left: 5%;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__txt__popular2 {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+.card__txt__popular2 p {
+    margin-top: 0;
+}
+.card__txt__popular2 h3 {
+    margin-bottom: 4%;
+}
+/* le texte au dessus des card activité */
+.activity__title {
+    width: 100%;
+    height: 12%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+/* activité et ces carte */
+.activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 23%;
+    margin-bottom: 2%;
+}
+.activity__card {
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.activity__card__img {
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+.card__txt__a {
+    width: 100%;
+    height: 15%;
+    margin-left: 4%;
+}
+/* les about et son contenaire */
+footer {
+    width: 100%;
+    height: 20%;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 2%;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 80%;
+}
+.about__us p {
+    margin-top: 20px;
+}
+
+.noDecoration{
+    text-decoration: none;
+    color: black;
+}
+.title__h2 {
+    font-size: 22px;
+    height: 2%;
+    margin: 0;
+    }
+
+/* responsive */
+@media screen and  (min-width: 1480px){
+    .filter__btn1{
+        width: 20%;
+    }
+    .filter__btn2{
+        width: 18%;    ;
+    }
+    .filter__btn3{
+        width: 20%;
+    }
+    .filter__btn4{
+        width: 22%;
+    }
+    .filter span{
+    font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+    .card-subtitle{
+        font-size: 14px;
+    }
+    .card-rating{
+        font-size: 12px;
+    }
+}
+
+@media screen and  (max-width: 1020px){
+    .card-title {
+        font-size: 16px;
+    }
+    .card-subtitle{
+        font-size: 14px;
+    }
+    .card-rating{
+        font-size: 12px;
+    }
+}
+/* tablette*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .couleurHover{
+        font-size: 16px;
+    }
+
+    nav{
+        height: 20%;
+    }
+    .enTete h2{
+        font-size: 22px;
+    }
+    .filter {
+        width: 100%;
+    }
+    .filter__block{
+        width: 87%;
+    }
+    .filter span {
+        font-size: 15px;
+    }
+    .filter__btn1{
+        width: 20%;
+    }
+    .filter__btn2{
+        width: 17%;
+    }
+    .filter__btn3{
+        width: 20%;
+    }
+    .filter__btn4{
+        width: 26%;
+    }
+
+
+    .hebergement {
+        flex-direction: column;
+        height: 50%;
+    }
+    .hebergement__marseille {
+        width: 100%;
+        height: 65%;
+    }
+    .hebergement__marseille__h2{
+        width: 95%;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+    .hebergement__marseille__h3{
+        width: 95%;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    .popular {
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .popularFlex{
+        width: 90%;
+        height: 30%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 2%;
+    }
+    .popular2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 70%;
+        width: 92%;
+        gap: 0;
+        margin-bottom: 3%;
+    }
+    .card__popular {
+        height: 78%;
+        width: 30%;
+    }
+    .card__txt__popular2{
+        margin-top: 4%;
+        height: 60%;
+    }
+
+    .card-title {
+        font-size: 1.563vw;
+        margin: 0;
+    }
+    .card-subtitle {
+        font-size: 1.367vw;
+        margin: 0;
+    }
+    .fa-star {
+        font-size: 1.172vw;
+    }
+    .card__txt__a {
+        width: 80%;
+        height: 15%;
+        padding-left: 8%;
+    }
+
+    footer {
+        height: 500px;
+    }
+}
+/* responsive */
+/* mobile */
+@media screen and (max-width: 767px) {
+    main {
+        height: 4250px;
+        width: 100%;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        height: 110px;
+        width: 100%;
+    }
+    .imgHead {
+        align-items: center;
+        height: 40%;
+    }
+    .categorie {
+        flex-direction: row;
+        width: 100%;
+    }
+    .borderTop {
+        width: 50%;
+        height: 100%;
+        border-bottom: #F2F2F2 3px solid;
+    }
+    .borderTop:hover{
+        border-top: #0065FC 0px solid;
+        border-bottom: #0065FC 3px solid;
+    }
+
+    nav {
+        height: 234px;
+        text-align: center;
+        justify-content: space-around;
+        width: 90%;
+    }
+    .enTete {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    .enTete h2 {
+        width: 100%;
+        height: 50%;
+        font-size: 22px;
+    }
+    .iconAlign{
+        justify-content: center;
+    }
+   label {
+    width: 15%;
+   }
+   nav p {
+    width: 90%;
+    justify-content: center;
+   }
+    .nav__search{
+        width: 100%;
+    }
+    .nav__search__bar {
+        width: 40%;
+        padding-left: 3%;
+    }
+    .btn__search{
+        width: 18%;
+    }
+    .btn__search__txt {
+        font-size: 18px;
+        visibility: hidden;
+        z-index: 0;
+        width: 0;
+    }
+    .fa-search {
+        justify-content: center;
+        visibility: visible;
+        z-index: 1;
+        width: 49px;
+    }
+    
+    .filter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 185px;      }
+      .filter h4 {
+        text-align: left;
+        width: 92%;
+        margin-bottom: 14px;
+      }
+      .filter__block {
+        width: 100%;
+        height: 64%;
+        flex-flow: wrap;
+        align-content: space-between;
+        column-gap: 4%;
+        justify-content: center;
+      }
+      .filter__btn1, .filter__btn2, .filter__btn3, .filter__btn4{
+        width: 40%;
+      }
+      .filter span {
+        font-size: 11px;
+      }
+
+      .information{
+        height: 2%;
+        width: 93%;
+        display: flex;
+      }
+      
+    .hebergement {
+        flex-direction: column-reverse;
+        height: 47%;
+    }
+    .popular {
+        width: 100%;
+        height: 600px;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    .popularFlex {
+        width: 90%;
+        padding-bottom: 4%;
+    }
+    .popular2 {
+        width: 97%;
+        margin-bottom: 10%;
+        gap: 3.5%;
+        height: 80%;
+    }
+    .card__popular {
+        height: 28%;
+        width: 90%;
+    }
+
+    .hebergement__marseille{
+        width: 100%;
+        height: 1430px;
+        background-color: #FFFF;
+        margin: 0;
+        justify-content: normal;
+        gap: 0.2%;
+    }
+    .hebergement__marseille__h2{
+        width: 78%;
+        height: 3%;
+    }
+    .hebergement__marseille__container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 92%;
+        margin:0;
+    }
+    .hebergement__marseille__h3 {
+        height: 0;
+        overflow: hidden;
+    }
+    .card {
+        width: 88%;
+        height: 15%;
+    }
+    .card-title {
+        margin-bottom: 0;
+    }
+
+    .activity__title{
+        height: 3%;
+        width: 87%;
+        align-items: flex-end;
+    }
+    .title__h2{
+    height: 39%;
+    width: 60%;
+    display: flex;
+    }
+    
+    .activity {
+        flex-direction: column;
+        height: 850px;
+        align-items: center;
+        padding-bottom: 77px;
+    }
+    .activity__card{
+        width: 90%;
+        height: 23%;
+    }
+    .activity__card__img{
+        height: 72%;
+    }
+    .card__txt__a{
+        margin-left: 4%;
+    }
+    .about{
+        flex-direction: column;
+        width: 94%;
+    }
+
+    footer {
+        height: 461px;
+        width: 100%;
+        margin: 0;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 420px){
+    .filter span {
+        font-size: 2.933vw;
+    }
+}
